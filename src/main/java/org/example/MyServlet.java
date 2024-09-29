@@ -6,9 +6,9 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.annotation.WebServlet;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+@WebServlet("/servlet")
 public class MyServlet extends GenericServlet {
 
     @Override
@@ -20,10 +20,10 @@ public class MyServlet extends GenericServlet {
                 <head>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Hello Servlet</title>
+                    <title>Servlet</title>
                 </head>
                 <body>
-                    <h1>Hello</h1>
+                    <h1>Hello World Hello World</h1>
                 </body>
                 </html>
                 """);
